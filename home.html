@@ -61,12 +61,84 @@
     </style>
   </head>
   <body class="">
-    <!-- <div class="mdl-layout"> -->
-     
-      <!-- <main class="mdl-layout__content"> -->
-    <!-- </div> -->
+    
+
+
+
+
+      <style>
+        .vdsdq {
+          position: fixed; 
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0,0,0,0.7);
+          z-index: 999;
+        }
+        .vdsdq .mdl-card-post {
+          margin: 30px auto;
+        }
+        .vdsdq .mdl-card-post__header {
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+        .vdsdq .mdl-card-post__header-title {
+          font-size: 24px;
+          line-height: 32px;
+        }
+        .vdsdq .mdl-card__supporting-text {
+          padding: 30px; 
+          width: initial;
+        } 
+        .vdsdq .mdl-card__supporting-text label {
+          display: block; 
+        }
+        .vdsdq .mdl-card__supporting-text form > label:nth-of-type(1) {
+          display: block;
+          margin-bottom: 20px;
+        }
+      </style>
+      <section class="vdsdq"> 
+        <div class="mdl-card-post mdl-card mdl-shadow--2dp">
+          <header class="mdl-card-post__header border-bottom"> 
+            <div class="mdl-card-post__header-meta">
+              <h4 class="mdl-card-post__header-title">
+                To find your Fanci:
+              </h4> 
+            </div>
+          </header>
+         
+          <div class="mdl-card__supporting-text">  
+            <form>  
+              <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-1">
+                <input type="radio" id="list-option-1" class="mdl-radio__button" name="options" value="1" checked /> 
+                Use my current location
+              </label>
+            
+              <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-2">
+                <input type="radio" id="list-option-2" class="mdl-radio__button" name="options" value="1" /> 
+                Use a different location
+              </label>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3">
+                <label class="mdl-textfield__label" for="sample3">Type your location here ...</label>
+              </div>
+
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                Search
+              </button>
+
+
+            <form> 
+          </div> 
+        </div> 
+      </section>
+
+
+
 
     <main class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+
       <header class="app-header">
         <h1 class="app-header__title">
           Home

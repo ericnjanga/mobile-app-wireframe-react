@@ -226,11 +226,14 @@ html, body,
  * mdl-card-post
  * ------------------
 */
-.mdl-card-post.mdl-card {
+.mdl-tabs .mdl-card-post.mdl-card {
   width: 100%; 
 } 
 .mdl-card-post__header { 
   padding: 10px;
+}
+.mdl-card-post__header.border-bottom { 
+  border-bottom: 1px solid #ddd;
 }
 .mdl-card-post__header-title { 
   font-size: 1.3rem;
@@ -241,7 +244,7 @@ html, body,
   height: 35px;
   border-radius: 35px;
 }
-.mdl-card-post__header-meta {
+.mdl-card-post__avatar + .mdl-card-post__header-meta {
   margin-left: 10px;
 }
 .mdl-card-post__header-date {
