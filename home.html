@@ -63,76 +63,42 @@
   <body class="">
     
 
+    <!-- (Fanci Locator) Modal -->
+    <section class="fanci-modal" style="display:none;"> 
+      <div class="mdl-card-post mdl-card mdl-shadow--2dp">
+        <header class="mdl-card-post__header border-bottom"> 
+          <div class="mdl-card-post__header-meta">
+            <h4 class="mdl-card-post__header-title">
+              To find your Fanci:
+            </h4> 
+          </div>
+        </header>
+       
+        <div class="mdl-card__supporting-text">  
+          <form>  
+            <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-1">
+              <input type="radio" id="list-option-1" class="mdl-radio__button" name="options" value="1" checked /> 
+              Use my current location
+            </label>
+          
+            <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-2">
+              <input type="radio" id="list-option-2" class="mdl-radio__button" name="options" value="1" /> 
+              Use a different location
+            </label>
 
-
-
-      <style>
-        .vdsdq {
-          position: fixed; 
-          width: 100%;
-          height: 100%;
-          background-color: rgba(0,0,0,0.7);
-          z-index: 999;
-        }
-        .vdsdq .mdl-card-post {
-          margin: 30px auto;
-        }
-        .vdsdq .mdl-card-post__header {
-          padding-left: 30px;
-          padding-right: 30px;
-        }
-        .vdsdq .mdl-card-post__header-title {
-          font-size: 24px;
-          line-height: 32px;
-        }
-        .vdsdq .mdl-card__supporting-text {
-          padding: 30px; 
-          width: initial;
-        } 
-        .vdsdq .mdl-card__supporting-text label {
-          display: block; 
-        }
-        .vdsdq .mdl-card__supporting-text form > label:nth-of-type(1) {
-          display: block;
-          margin-bottom: 20px;
-        }
-      </style>
-      <section class="vdsdq"> 
-        <div class="mdl-card-post mdl-card mdl-shadow--2dp">
-          <header class="mdl-card-post__header border-bottom"> 
-            <div class="mdl-card-post__header-meta">
-              <h4 class="mdl-card-post__header-title">
-                To find your Fanci:
-              </h4> 
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="sample3">
+              <label class="mdl-textfield__label" for="sample3">Type your location here ...</label>
             </div>
-          </header>
-         
-          <div class="mdl-card__supporting-text">  
-            <form>  
-              <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-1">
-                <input type="radio" id="list-option-1" class="mdl-radio__button" name="options" value="1" checked /> 
-                Use my current location
-              </label>
-            
-              <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-2">
-                <input type="radio" id="list-option-2" class="mdl-radio__button" name="options" value="1" /> 
-                Use a different location
-              </label>
 
-              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" type="text" id="sample3">
-                <label class="mdl-textfield__label" for="sample3">Type your location here ...</label>
-              </div>
-
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-                Search
-              </button>
-
-
-            <form> 
-          </div> 
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+              Search
+            </button>
+          <form> 
         </div> 
-      </section>
+      </div> 
+    </section>
+    <!-- (Fanci Locator) Modal -->
 
 
 
@@ -149,7 +115,7 @@
               <i class="material-icons">home</i>
             </a>
             <a href="#aroundus-panel" class="mdl-tabs__tab"> 
-              <i class="material-icons">notifications</i>
+              <i class="material-icons mdl-badge mdl-badge--overlap" data-badge="25">notifications</i>
             </a>
             <a href="#profile-panel" class="mdl-tabs__tab"> 
               <i class="material-icons">person</i>
@@ -314,10 +280,15 @@
       <!-- MDL Tab panel 3 -->
       <section class="mdl-tabs__panel" id="profile-panel">
         <header class="user-profile__header"> 
-          <img src="./images/rsz_avatar3.jpg" alt="" class="user-profile__header-avatar">
+          <div class="user-profile__header-imgframe">
+            <img src="./images/rsz_avatar3.jpg" alt="" class="user-profile__header-avatar">
+            <i class="material-icons">create</i>
+          </div>
+          
           <h3>User Name</h3>
           <h4>
-            <i class="material-icons">location_on</i> User Location
+            <i class="material-icons">camera_alt</i>
+            <span>357 avenue des moulineaux</span>
           </h4>
         </header><!-- user-profile__header -->
 
