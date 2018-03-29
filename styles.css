@@ -1,0 +1,82 @@
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+html, body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body.login { 
+  background-image: -webkit-gradient(linear, 0 0, 744.5 0, from(#376f9d), color-stop(0.006, #386e9e), color-stop(0.021, #38709e), color-stop(0.055, #3973a0), color-stop(0.126, #3b75a2), color-stop(0.126, #3976a0), color-stop(0.137, #3976a0), color-stop(0.137, #3b75a0), color-stop(0.251, #3d7aa2), color-stop(0.251, #3c7ba1), color-stop(0.352, #4180a5), color-stop(0.481, #4386aa), color-stop(0.481, #4387a8), color-stop(0.725, #4a93b2), color-stop(0.853, #4c9bb2), to(#4fa1b6));
+  background-image: -webkit-linear-gradient(360deg, #376f9d, #386e9e 0.6%, #38709e 2.1%, #3973a0 5.5%, #3b75a2 12.6%, #3976a0 12.6%, #3976a0 13.7%, #3b75a0 13.7%, #3d7aa2 25.1%, #3c7ba1 25.1%, #4180a5 35.2%, #4386aa 48.1%, #4387a8 48.1%, #4a93b2 72.5%, #4c9bb2 85.3%, #4fa1b6);
+  background-image: -moz-linear-gradient(360deg, #376f9d, #386e9e 0.6%, #38709e 2.1%, #3973a0 5.5%, #3b75a2 12.6%, #3976a0 12.6%, #3976a0 13.7%, #3b75a0 13.7%, #3d7aa2 25.1%, #3c7ba1 25.1%, #4180a5 35.2%, #4386aa 48.1%, #4387a8 48.1%, #4a93b2 72.5%, #4c9bb2 85.3%, #4fa1b6);
+  background-image: -o-linear-gradient(360deg, #376f9d, #386e9e 0.6%, #38709e 2.1%, #3973a0 5.5%, #3b75a2 12.6%, #3976a0 12.6%, #3976a0 13.7%, #3b75a0 13.7%, #3d7aa2 25.1%, #3c7ba1 25.1%, #4180a5 35.2%, #4386aa 48.1%, #4387a8 48.1%, #4a93b2 72.5%, #4c9bb2 85.3%, #4fa1b6);
+  background-image: linear-gradient(90deg, #376f9d, #386e9e 0.6%, #38709e 2.1%, #3973a0 5.5%, #3b75a2 12.6%, #3976a0 12.6%, #3976a0 13.7%, #3b75a0 13.7%, #3d7aa2 25.1%, #3c7ba1 25.1%, #4180a5 35.2%, #4386aa 48.1%, #4387a8 48.1%, #4a93b2 72.5%, #4c9bb2 85.3%, #4fa1b6)
+}
+
+
+.mdl-card--login {
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  max-width: 300px;
+  background-color: transparent;
+}
+.mdl-card--login .mdl-card__supporting-text {
+  padding: 0; 
+  width: 100%; 
+}
+.mdl-card--login .mdl-textfield__label {
+  color: rgba(255, 255, 255, 0.6);
+}
+.mdl-card--login .title {
+  color: #fff;
+  text-align: center;
+}
+.mdl-card--login .title .material-icons {
+  font-size: 3rem;
+}
+.mdl-card--login .mdl-textfield:nth-of-type(2) {
+  position: relative;
+  top: -20px;
+}
+.mdl-card--login .mdl-button {
+  width: 100%; 
+}
+
+
+
+
+.app-header {
+  background: rgb(33,150,243);
+}
+.app-header a {
+  color: #fff;
+}
+.app-header__title {
+  padding: 10px 10px 0px 20px;
+  margin: 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.mdl-tabs__tab-bar > nav {
+  display: flex;
+  width: 100%;
+}
+.mdl-tabs__tab-bar > nav a {
+  flex-basis: 100%;
+}
