@@ -15,23 +15,83 @@
  */
 
 html, body {
-  font-family: 'Roboto', 'Helvetica', sans-serif;
-  margin: 0;
+  font-family: 'Roboto', 'Helvetica', sans-serif; 
   padding: 0;
+  background-color: #ddd;
 }
 
 body.login { 
-  background-image: -webkit-gradient(linear, 0 0, 744.5 0, from(#376f9d), color-stop(0.006, #386e9e), color-stop(0.021, #38709e), color-stop(0.055, #3973a0), color-stop(0.126, #3b75a2), color-stop(0.126, #3976a0), color-stop(0.137, #3976a0), color-stop(0.137, #3b75a0), color-stop(0.251, #3d7aa2), color-stop(0.251, #3c7ba1), color-stop(0.352, #4180a5), color-stop(0.481, #4386aa), color-stop(0.481, #4387a8), color-stop(0.725, #4a93b2), color-stop(0.853, #4c9bb2), to(#4fa1b6));
-  background-image: -webkit-linear-gradient(360deg, #376f9d, #386e9e 0.6%, #38709e 2.1%, #3973a0 5.5%, #3b75a2 12.6%, #3976a0 12.6%, #3976a0 13.7%, #3b75a0 13.7%, #3d7aa2 25.1%, #3c7ba1 25.1%, #4180a5 35.2%, #4386aa 48.1%, #4387a8 48.1%, #4a93b2 72.5%, #4c9bb2 85.3%, #4fa1b6);
-  background-image: -moz-linear-gradient(360deg, #376f9d, #386e9e 0.6%, #38709e 2.1%, #3973a0 5.5%, #3b75a2 12.6%, #3976a0 12.6%, #3976a0 13.7%, #3b75a0 13.7%, #3d7aa2 25.1%, #3c7ba1 25.1%, #4180a5 35.2%, #4386aa 48.1%, #4387a8 48.1%, #4a93b2 72.5%, #4c9bb2 85.3%, #4fa1b6);
-  background-image: -o-linear-gradient(360deg, #376f9d, #386e9e 0.6%, #38709e 2.1%, #3973a0 5.5%, #3b75a2 12.6%, #3976a0 12.6%, #3976a0 13.7%, #3b75a0 13.7%, #3d7aa2 25.1%, #3c7ba1 25.1%, #4180a5 35.2%, #4386aa 48.1%, #4387a8 48.1%, #4a93b2 72.5%, #4c9bb2 85.3%, #4fa1b6);
-  background-image: linear-gradient(90deg, #376f9d, #386e9e 0.6%, #38709e 2.1%, #3973a0 5.5%, #3b75a2 12.6%, #3976a0 12.6%, #3976a0 13.7%, #3b75a0 13.7%, #3d7aa2 25.1%, #3c7ba1 25.1%, #4180a5 35.2%, #4386aa 48.1%, #4387a8 48.1%, #4a93b2 72.5%, #4c9bb2 85.3%, #4fa1b6)
+  background-color: #4d2b90;
 }
 
 
+
+
+/*
+ * common styles
+ * ------------------
+*/ 
+.mdl-card-post__footer-links li a,
+.mdl-card-post__footer-links li a span,
+.mdl-card-post__footer-links,
+.mdl-tabs,
+.mdl-tabs__tab-bar > nav, 
+.user-profile__header h4,
+.mdl-card-post__header,
+.user-profile__header {
+  display: flex;
+}
+html, body,
+.mdl-card-post__header-title,
+.mdl-card-post__footer-links,
+.user-profile__header h3,
+.user-profile__header h4,
+.app-header__title,
+.app-header__title {
+  margin: 0;
+}
+.user-profile__header h3,
+.app-header__title,
+.app-header a,
+.mdl-card--login .title { 
+  color: #fff;
+}
+
+.app-header,
+.main-footer {
+  background: #4d2b90;
+}
+
+#profile-panel .mdl-card-post,
+.mdl-tabs__panel-frame {
+  padding: 20px;
+}
+
+.mdl-card--login .title .material-icons,
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active { 
+  color: rgb(233,30,99);
+}
+
+.mdl-button--fab.mdl-button--colored {
+  background: rgb(233,30,99);
+}
+.mdl-card-post__footer-links li a,
+.user-profile__header {
+  justify-content: center;
+}
+
+
+
+
+
+
+/*
+ * Login
+ * ------------------
+*/
 .mdl-card--login {
   margin: auto;
-  padding: 0;
+  padding: 20px;
   width: 100%;
   max-width: 300px;
   background-color: transparent;
@@ -41,14 +101,17 @@ body.login {
   width: 100%; 
 }
 .mdl-card--login .mdl-textfield__label {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.9);
+}
+.mdl-card--login .mdl-textfield__input {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
 .mdl-card--login .title {
-  color: #fff;
+  margin-top: 60px; 
   text-align: center;
 }
 .mdl-card--login .title .material-icons {
-  font-size: 3rem;
+  font-size: 3rem; 
 }
 .mdl-card--login .mdl-textfield:nth-of-type(2) {
   position: relative;
@@ -59,22 +122,22 @@ body.login {
 }
 
 
-
-
-.app-header {
-  background: #7e57c2;
+/*
+ * App Header
+ * ------------------
+*/ 
+.app-header{
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
-.app-header a {
-  color: #fff;
+.app-header a { 
 }
 .app-header__title {
-  padding: 10px 10px 0px 20px;
-  margin: 0;
-  font-size: 1.5rem;
-  color: #fff;
+  padding: 10px 10px 0px 20px; 
+  font-size: 1.5rem; 
 }
-.mdl-tabs__tab-bar > nav {
-  display: flex;
+.mdl-tabs__tab-bar > nav { 
   width: 100%;
 }
 .mdl-tabs__tab-bar > nav a {
@@ -82,15 +145,13 @@ body.login {
 }
 
 
-.mdl-tabs {
-  display: flex;
+.mdl-tabs { 
   width: 100%;
   flex-direction: column;
   height: 100vh;
 }
 .mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
-  height: 4px;
-  background-color: #ffca28;
+  height: 4px; 
 }
 
 
@@ -101,14 +162,151 @@ body.login {
 .mdl-tabs .mdl-tabs__panel {
   height: 100%;
 }
+.mdl-tabs__panel-frame .mdl-card-post {
+  margin-bottom: 20px;
+}
 #home-panel {
   background-image: url(./images/map.png);
   background-size: cover;
   background-position: center;
 }
 #aroundus-panel {
-  background-color: orange;
+  /*background-color: orange;*/
 }
+
+
+
+/*
+ * User profile
+ * ------------------
+*/ 
 #profile-panel {
-  background-color: lime;
+  /*background-color: lime;*/
 }
+#profile-panel .mdl-textfield__label {
+  color: rgba(0,0,0,.54);
+}
+#profile-panel .mdl-textfield__input {
+  border-bottom: 1px solid rgba(0,0,0,.54);
+}
+#profile-panel .mdl-textfield--floating-label.is-focused .mdl-textfield__label {
+  color: rgb(233, 30, 99);
+}
+#profile-panel .mdl-checkbox {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.user-profile__header { 
+  background-color: #7e57c2;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+.user-profile__header h3 {  
+  margin-top: 10px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+.user-profile__header h4 {  
+  font-size: 1.0rem;
+  align-items: center;
+  line-height: 0;
+      color: #ccc;
+}
+.user-profile__header-avatar {
+  width: 90px; 
+  height: 90px;
+  border-radius: 90px;
+  cursor: pointer;
+}
+
+
+/*
+ * mdl-card-post
+ * ------------------
+*/
+.mdl-card-post.mdl-card {
+  width: 100%; 
+} 
+.mdl-card-post__header { 
+  padding: 10px;
+}
+.mdl-card-post__header-title { 
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+}
+.mdl-card-post__avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+}
+.mdl-card-post__header-meta {
+  margin-left: 10px;
+}
+.mdl-card-post__header-date {
+  font-size: 0.95rem;
+      color: rgba(0,0,0,.54);
+}
+
+.mdl-card-post.mdl-card .mdl-card__title {
+  padding: 0;
+}
+.mdl-card-post.mdl-card .mdl-card__title img {
+  max-width: 100%;
+}
+.mdl-card-post__footer-links {
+  list-style: none;
+  padding: 0; 
+}
+.mdl-card-post__footer-links li {
+  flex-basis: 100%;
+}
+.mdl-card-post__footer-links li a { 
+  text-decoration: none;
+  color: #666;
+}
+.mdl-card-post__footer-links li a span {
+  display: block; 
+  text-decoration: none;
+  color: #999;
+}
+.mdl-card-post__footer-links .material-icons {
+  margin-right: 6px;
+}
+.mdl-card-post__header,
+.mdl-card-post .mdl-card__supporting-text,
+.mdl-card-post .mdl-card__actions {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+
+/*
+ * Widgets
+ * ------------------
+*/  
+.mdl-tabs__tab-bar {
+  border-bottom: 0px solid #e0e0e0;
+}
+.mdl-textfield {
+  width: 100%;
+}
+
+/* Fixed header and pushing panels down */  
+.btn-open-post {
+  position: fixed;
+  display: block;
+  right: 0;
+  bottom: 0;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  z-index: 900;
+}
+.mdl-tabs .mdl-tabs__panel {
+  padding-top: 85px;
+}
+    
+
+
+
