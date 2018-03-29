@@ -62,7 +62,7 @@ body.login {
 
 
 .app-header {
-  background: rgb(33,150,243);
+  background: #7e57c2;
 }
 .app-header a {
   color: #fff;
@@ -79,4 +79,36 @@ body.login {
 }
 .mdl-tabs__tab-bar > nav a {
   flex-basis: 100%;
+}
+
+
+.mdl-tabs {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 100vh;
+}
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
+  height: 4px;
+  background-color: #ffca28;
+}
+
+
+/*
+ * Panels
+ * ------------------
+*/
+.mdl-tabs .mdl-tabs__panel {
+  height: 100%;
+}
+#home-panel {
+  background-image: url(./images/map.png);
+  background-size: cover;
+  background-position: center;
+}
+#aroundus-panel {
+  background-color: orange;
+}
+#profile-panel {
+  background-color: lime;
 }
