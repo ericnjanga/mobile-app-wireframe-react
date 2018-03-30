@@ -41,6 +41,13 @@ body.login {
 .user-profile__header {
   display: flex;
 }
+.mdl-card--login .mdl-textfield:nth-of-type(2),
+.mdl-tabs__tab-bar > nav a .material-icons,
+.user-profile__header-imgframe,
+.mdl-tabs__panel-frame {
+  position: relative;
+
+}
 html, body,
 .mdl-card-post__header-title,
 .mdl-card-post__footer-links,
@@ -113,8 +120,7 @@ html, body,
 .mdl-card--login .title .material-icons {
   font-size: 3rem; 
 }
-.mdl-card--login .mdl-textfield:nth-of-type(2) {
-  position: relative;
+.mdl-card--login .mdl-textfield:nth-of-type(2) { 
   top: -20px;
 }
 
@@ -140,8 +146,8 @@ html, body,
 .mdl-tabs__tab-bar > nav a {
   flex-basis: 100%;
 }
-.mdl-tabs__tab-bar > nav a .mdl-badge {
-  top: 6px;
+.mdl-tabs__tab-bar > nav a .material-icons { 
+  top: 7px;
 }
 
 
@@ -165,11 +171,70 @@ html, body,
 .mdl-tabs__panel-frame .mdl-card-post {
   margin-bottom: 20px;
 }
+
+/* home panel */
 #home-panel {
   background-image: url(./images/map.png);
   background-size: cover;
   background-position: center;
 }
+#home-panel.is-active {
+  display: flex; 
+}
+#home-panel {
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  height: calc(100vh - 85px); 
+  top: 85px;
+  padding: 00; 
+}
+#home-panel .fanci-pinpoint:not(.fanci-pinpoint__main) {
+  position: absolute; 
+} 
+#home-panel .fanci-pinpoint:nth-of-type(2) {
+  top: 70px;
+  left: 150px;
+}
+#home-panel .fanci-pinpoint:nth-of-type(3) {
+  top: 122px;
+  left: 190px;
+}
+#home-panel .fanci-pinpoint:nth-of-type(4) {
+  top: 180px;
+  left: 40px;
+}
+#home-panel .fanci-pinpoint:nth-of-type(5) {
+  top: 110px;
+  left: 110px;
+}
+#home-panel .fanci-pinpoint:nth-of-type(6) {
+  top: 150px;
+  left: 250px;
+}
+#home-panel .fanci-pinpoint:nth-of-type(7) {
+  top: 370px;
+  left: 60px;
+}
+#home-panel .fanci-pinpoint:nth-of-type(8) {
+  top: 420px;
+  left: 120px;
+}
+#home-panel .fanci-pinpoint:nth-of-type(9) {
+  top: 390px;
+  left: 300px;
+}
+#home-panel .fanci-pinpoint:nth-of-type(10) {
+  top: 490px;
+  left: 100px;
+}
+#home-panel .fanci-pinpoint:nth-of-type(11) {
+  top: 410px;
+  left: 330px;
+}
+
+/* aroundus panel */
 #aroundus-panel {
   /*background-color: orange;*/
 }
@@ -203,8 +268,7 @@ html, body,
   flex-direction: column;
   padding: 30px;
 }
-.user-profile__header-imgframe { 
-  position: relative;
+.user-profile__header-imgframe {  
 }
 .user-profile__header-imgframe .material-icons {
   position: absolute;
@@ -226,13 +290,6 @@ html, body,
   line-height: 0;
       color: #ccc;
 }
-.user-profile__header-avatar {
-  width: 120px; 
-  height: 120px;
-  border-radius: 120px;
-  cursor: pointer;
-  border: 3px solid rgb(233,30,99);
-}
 
 
 /*
@@ -251,11 +308,6 @@ html, body,
 .mdl-card-post__header-title { 
   font-size: 1.3rem;
   line-height: 1.3rem;
-}
-.mdl-card-post__avatar {
-  width: 35px;
-  height: 35px;
-  border-radius: 35px;
 }
 .mdl-card-post__avatar + .mdl-card-post__header-meta {
   margin-left: 10px;
@@ -350,7 +402,14 @@ html, body,
 .login .mdl-button  {
   width: 100%;
 }
-
+.fanci-btn-post {
+  position: fixed;
+  display: block;
+      width: 60px;
+  right: 40px;
+  bottom: 40px; 
+  z-index: 900;
+}
 /* Fixed header and pushing panels down */  
 .btn-open-post {
   position: fixed;
@@ -371,3 +430,68 @@ html, body,
 
 
 
+
+/*
+ * Avatar
+ * ------------------
+*/ 
+.fanci-avatar {
+  border-radius: 120px;
+  cursor: pointer;
+}
+.fanci-avatar__small {
+  width: 35px;
+  height: 35px; 
+  border: 1px solid rgb(233,30,99);
+}
+.fanci-avatar__medium {
+  width: 60px;
+  height: 60px; 
+  border: 2px solid rgb(233,30,99);
+}
+.fanci-avatar__large {
+  width: 120px; 
+  height: 120px;
+  border: 3px solid rgb(233,30,99);
+}
+  
+
+
+
+/*
+ * Avatar
+ * ------------------
+*/
+.popper, .tooltip {
+    position: absolute;
+    background: #FFC107;
+    color: black;
+    width: 150px;
+    border-radius: 3px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    padding: 10px;
+    text-align: center;
+}
+.popper span {
+  font-weight: 100;
+}
+.popper[x-placement^="top"] .popper__arrow, .tooltip[x-placement^="top"] .tooltip-arrow {
+    border-width: 5px 5px 0 5px;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    bottom: -5px;
+    left: calc(50% - 5px);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.tooltip .tooltip-arrow, .popper .popper__arrow {
+    border-color: #FFC107;
+}
+.popper .popper__arrow, .tooltip .tooltip-arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    margin: 5px;
+}
