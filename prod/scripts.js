@@ -1,0 +1,8 @@
+var promise_createPoints=new Promise(function(resolve,reject){const arrPoints=[];const ps=[{top:'70px',left:'150px'},{top:'122px',left:'190px'},{top:'180px',left:'40px'},{top:'110px',left:'110px'},{top:'150px',left:'250px'},{top:'380px',left:'60px'},{top:'420px',left:'120px'},{top:'390px',left:'300px'},{top:'490px',left:'100px'},{top:'410px',left:'330px'}];for(var i=0;i<ps.length;i++){let _ps=ps[i];arrPoints.push($(`<a href="#" class="fanci-pinpoint" id="point${i}" style="top:${_ps.top}; left:${_ps.left};">
+	    <span class="popper" id="popper${i}" data-for="point${i}" x-placement="bottom">
+	      <b>Fanci</b> <span>going for a jog?</span> 
+	        <div class="popper__arrow" x-arrow="" style="left: 43px;"></div>
+	    </span>
+	    <img src="./images/rsz_avatar3.jpg" alt="" class="fanci-avatar fanci-avatar__small">
+	  </a>`))};if(!0){resolve(arrPoints)}
+else{reject(Error("It broke"))}});promise_createPoints.then(function(newPoints){newPoints.map($point=>{$point.appendTo('#home-panel')});return newPoints}).then(function(allPoints){allPoints.map($point=>{var anotherPopper=new Popper($point[0],$point.find('.popper')[0],{placement:'top'})})});$('body').on('click','.fanci-pinpoint',function(event){event.preventDefault();$('a.mdl-tabs__tab').removeClass('is-active');$('[href="#aroundus-panel"]').addClass('is-active');$('.mdl-tabs__panel').removeClass('is-active');$('#aroundus-panel').addClass('is-active')})
