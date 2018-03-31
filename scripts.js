@@ -92,3 +92,39 @@ $('body').on('click', '.fanci-pinpoint', function(event){
 
 
 });
+
+
+
+
+
+//Control 'modal-location'
+$(function(){
+	const $modal_location = $('#modal-location').fadeIn('slow');
+	//Choose between locations ...
+	$('body').on('change', '[name="current-location"]', function(){ 
+		$('#form-location__custom').toggle( parseInt($(this).val())===0 );
+	});
+	//DIsmiss modal...
+	$('body').on('click', '#form-location__btn-submit', function(event){
+		event.preventDefault();
+		$modal_location.fadeOut('slow');
+	});
+});
+
+
+
+
+
+//Control 'modal-post'
+$(function(){
+	const $modal_post = $('#modal-post');
+	// //Choose between locations ...
+	// $('body').on('change', '[name="current-location"]', function(){ 
+	// 	$('#form-location__custom').toggle( parseInt($(this).val())===0 );
+	// });
+	//DIsmiss modal...
+	$('body').on('click', '#fanci-btn-post', function(event){
+		event.preventDefault();
+		$modal_post.fadeIn('slow');
+	});
+});

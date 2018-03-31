@@ -32,7 +32,7 @@
     
 
     <!-- (Fanci Locator) Modal -->
-    <section class="fanci-modal" style="display:none;"> 
+    <section id="modal-location" class="fanci-modal" style="display:none;"> 
       <div class="mdl-card-post mdl-card mdl-shadow--2dp">
         <header class="mdl-card-post__header border-bottom"> 
           <div class="mdl-card-post__header-meta">
@@ -43,23 +43,23 @@
         </header>
        
         <div class="mdl-card__supporting-text">  
-          <form>  
-            <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-1">
-              <input type="radio" id="list-option-1" class="mdl-radio__button" name="options" value="1" checked /> 
+          <form class="form-location">  
+            <label class="location-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-1">
+              <input type="radio" id="list-option-1" class="mdl-radio__button" name="current-location" value="1" checked /> 
               Use my current location
             </label>
           
-            <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-2">
-              <input type="radio" id="list-option-2" class="mdl-radio__button" name="options" value="1" /> 
+            <label class="location-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-2">
+              <input type="radio" id="list-option-2" class="mdl-radio__button" name="current-location" value="0" /> 
               Use a different location
             </label>
-
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+ 
+            <div id="form-location__custom" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="display:none;">
               <input class="mdl-textfield__input" type="text" id="sample3">
               <label class="mdl-textfield__label" for="sample3">Type your location here ...</label>
             </div>
-
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+             
+            <button id="form-location__btn-submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="margin-top: 30px; min-width: 120px;">
               Search
             </button>
           <form> 
@@ -67,6 +67,49 @@
       </div> 
     </section>
     <!-- (Fanci Locator) Modal -->
+
+
+
+
+
+    
+
+    <!-- (Fanci Post) Modal -->
+    <section id="modal-post" class="fanci-modal" style="display:none;"> 
+      <div class="mdl-card-post mdl-card mdl-shadow--2dp">
+        <header class="mdl-card-post__header border-bottom"> 
+          <div class="mdl-card-post__header-meta">
+            <h4 class="mdl-card-post__header-title">
+              To find your Fanci:
+            </h4> 
+          </div>
+        </header>
+       
+        <div class="mdl-card__supporting-text">  
+          <form class="form-location">  
+            <!-- <label class="location-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-1">
+              <input type="radio" id="list-option-1" class="mdl-radio__button" name="current-location" value="1" checked /> 
+              Use my current location
+            </label>
+          
+            <label class="location-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-2">
+              <input type="radio" id="list-option-2" class="mdl-radio__button" name="current-location" value="0" /> 
+              Use a different location
+            </label>
+ 
+            <div id="form-location__custom" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="display:none;">
+              <input class="mdl-textfield__input" type="text" id="sample3">
+              <label class="mdl-textfield__label" for="sample3">Type your location here ...</label>
+            </div> -->
+             
+            <button id="form-location__btn-submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="margin-top: 30px; min-width: 120px;">
+              Search
+            </button>
+          <form> 
+        </div> 
+      </div> 
+    </section>
+    <!-- (Fanci Post) Modal -->
 
 
 
@@ -100,7 +143,7 @@
 
 
 
-        <a class="mdl-button fanci-btn-post mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--raised">
+        <a id="fanci-btn-post" class="mdl-button fanci-btn-post mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--raised">
           <i class="material-icons">create</i>
         </a>
 
