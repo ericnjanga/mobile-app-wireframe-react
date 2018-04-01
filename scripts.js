@@ -104,7 +104,7 @@ $(function(){
 	$('body').on('change', '[name="current-location"]', function(){ 
 		$('#form-location__custom').toggle( parseInt($(this).val())===0 );
 	});
-	//DIsmiss modal...
+	//Dismiss modal...
 	$('body').on('click', '#form-location__btn-submit', function(event){
 		event.preventDefault();
 		$modal_location.fadeOut('slow');
@@ -117,14 +117,25 @@ $(function(){
 
 //Control 'modal-post'
 $(function(){
-	const $modal_post = $('#modal-post');
-	// //Choose between locations ...
-	// $('body').on('change', '[name="current-location"]', function(){ 
-	// 	$('#form-location__custom').toggle( parseInt($(this).val())===0 );
-	// });
-	//DIsmiss modal...
+	const $modal_post = $('#modal-post'); 
+	//Show modal...
 	$('body').on('click', '#fanci-btn-post', function(event){
 		event.preventDefault();
 		$modal_post.fadeIn('slow');
 	});
+	//Dismiss modal...
+	$('body').on('click', '.modal-post__btn-dismiss', function(event){
+		event.preventDefault();
+		$modal_post.fadeOut('slow');
+	});
+	//No action at all...
+	$('body').on('click', '.fanci-modal--post__addimage', function(event){
+		event.preventDefault(); 
+	});
+
+
+
 });
+
+
+ 

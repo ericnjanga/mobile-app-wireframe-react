@@ -220,12 +220,15 @@ html, body,
 #profile-panel {
   /*background-color: lime;*/
 }
+.fanci-modal--post .mdl-textfield__label,
 #profile-panel .mdl-textfield__label {
   color: rgba(0,0,0,.54);
 }
+.fanci-modal--post .mdl-textfield__input,
 #profile-panel .mdl-textfield__input {
   border-bottom: 1px solid rgba(0,0,0,.54);
 }
+.fanci-modal--post .mdl-textfield--floating-label.is-focused .mdl-textfield__label,
 .mdl-card--login .mdl-textfield--floating-label.is-focused .mdl-textfield__label,
 #profile-panel .mdl-textfield--floating-label.is-focused .mdl-textfield__label {
   color: #ff9800;
