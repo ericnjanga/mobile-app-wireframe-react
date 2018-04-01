@@ -31,7 +31,7 @@
   <body class="login">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header"> 
       <main class="mdl-layout__content"> 
-        <section class="mdl-card mdl-card--auth">
+        <section class="mdl-card mdl-card--auth mdl-card--register">
           <div class="mdl-card__supporting-text">
             <h1 class="title">
               Fanci 
@@ -44,15 +44,25 @@
               </div>
 
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="input-confirm-email">
+                <label class="mdl-textfield__label" for="input-confirm-email">Confirm Email Address</label>
+              </div> 
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <input class="mdl-textfield__input" type="text" id="input-password">
                 <label class="mdl-textfield__label" for="input-password">Password</label>
               </div>
 
-              <a href="home.html"  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect"> Login</a> 
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="input-confirm-password">
+                <label class="mdl-textfield__label" for="input-confirm-password">Confirm Password</label>
+              </div>
+
+              <a href="home.html"  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">Register</a> 
             </form>
             
             <footer>
-              <p>Don't have an account? Please <a href="register.html">register here</a>!</p> 
+              <p>Already have an account? Please <a href="index.html">log in here</a>!</p>
             </footer>
           </div> 
         </section> 
