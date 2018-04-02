@@ -72,28 +72,63 @@ promise_createPoints.then(function(newPoints) {
 
 
 
-
+/**
+ * Open "Around Us" panel if a "fanci-pinpoint" on the map is clicked
+*/
 $('body').on('click', '.fanci-pinpoint', function(event){
 	event.preventDefault(); 
-
-
-	// $('[href="#aroundus-panel"]').trigger('click');
-
-
 	// remove all is-active classes from tabs
-            $('a.mdl-tabs__tab').removeClass('is-active');
-            // activate desired tab
-            $('[href="#aroundus-panel"]').addClass('is-active');
-            // remove all is-active classes from panels
-            $('.mdl-tabs__panel').removeClass('is-active');
-            // activate desired tab panel
-            $('#aroundus-panel').addClass('is-active');
-
-
-
+    $('a.mdl-tabs__tab').removeClass('is-active');
+    // activate desired tab
+    $('[href="#aroundus-panel"]').addClass('is-active');
+    // remove all is-active classes from panels
+    $('.mdl-tabs__panel').removeClass('is-active');
+    // activate desired tab panel
+    $('#aroundus-panel').addClass('is-active');
 });
 
 
+
+
+/**
+ * Open "Profile" panel if a "profile" link is clicked from sidebar panel
+*/
+$('body').on('click', '.mdl-navigation__profile', function(event){
+	event.preventDefault(); 
+	// remove all is-active classes from tabs
+    $('a.mdl-tabs__tab').removeClass('is-active');
+    // activate desired tab
+    $('[href="#profile-panel"]').addClass('is-active');
+    // remove all is-active classes from panels
+    $('.mdl-tabs__panel').removeClass('is-active');
+    // activate desired tab panel
+    $('#profile-panel').addClass('is-active');
+    //Hide side nav...
+    window.setTimeout(()=>{
+    	$('.mdl-layout__obfuscator.is-visible').trigger('click');
+    }, 200);
+});
+
+/**
+ * Open "Privacy" panel if a "privacy" link is clicked from sidebar panel
+*/
+$('body').on('click', '.mdl-navigation__privacy', function(event){
+	event.preventDefault(); 
+	// remove all is-active classes from tabs
+    $('a.mdl-tabs__tab').removeClass('is-active');
+    // activate desired tab
+    $('[href="#privacy-panel"]').addClass('is-active');
+    // remove all is-active classes from panels
+    $('.mdl-tabs__panel').removeClass('is-active');
+    // activate desired tab panel
+    $('#privacy-panel').addClass('is-active');
+    //Hide side nav...
+    window.setTimeout(()=>{
+    	$('.mdl-layout__obfuscator.is-visible').trigger('click');
+    }, 200);
+});
+
+//privacy-panel  -- privacy
 
 
 
@@ -132,9 +167,6 @@ $(function(){
 	$('body').on('click', '.fanci-modal--post__addimage', function(event){
 		event.preventDefault(); 
 	});
-
-
-
 });
 
 

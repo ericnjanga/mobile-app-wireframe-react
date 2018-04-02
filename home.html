@@ -212,10 +212,10 @@
         <hr>
 
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">
+          <a class="mdl-navigation__link mdl-navigation__profile" href="">
             <i class="material-icons">person</i> Profile
           </a>
-          <a class="mdl-navigation__link" href="">
+          <a class="mdl-navigation__link mdl-navigation__privacy" href="">
             <i class="material-icons">info_outline</i> Privacy
           </a>
         </nav>
@@ -237,24 +237,35 @@
             <h1 class="app-header__title">
               Fanci <i class="material-icons">person_pin</i>
             </h1>
+
+
+
+            <div class="app-header__search mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+              <label class="mdl-button mdl-js-button mdl-button--icon"
+                     for="fixed-header-drawer-exp">
+                <i class="material-icons">search</i>
+              </label>
+              <div class="mdl-textfield__expandable-holder">
+                <input class="mdl-textfield__input" type="text" name="sample"
+                       id="fixed-header-drawer-exp">
+              </div>
+            </div>
+
+
+
+
             <div class="mdl-tabs__tab-bar">
               <nav>
                 <a href="#home-panel" class="mdl-tabs__tab is-active"> 
                   <i class="material-icons">home</i>
-                </a>
-                <a href="#profile-panel" class="mdl-tabs__tab"> 
-                  <i class="material-icons">search</i>
-                </a>
+                </a> 
                 <a href="#aroundus-panel" class="mdl-tabs__tab"> 
                   <i class="material-icons mdl-badge mdl-badge--overlap" data-badge="25">notifications</i>
                 </a>
                 <a href="#profile-panel" class="mdl-tabs__tab"> 
                   <i class="material-icons">person</i>
-                </a>
-                 
- 
-
-
+                </a> 
               </nav>
             </div><!-- mdl-tabs__tab-bar --> 
  
@@ -266,18 +277,16 @@
           <section class="mdl-tabs__panel is-active" id="home-panel">  
             <a href="#" class="fanci-pinpoint fanci-pinpoint__main">
               <img src="./images/rsz_avatar3.jpg" alt="" class="fanci-avatar fanci-avatar__medium">
-            </a> 
-
-
+            </a>  
 
             <a id="fanci-btn-post" class="mdl-button fanci-btn-post mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--raised">
               <i class="material-icons">create</i>
             </a>
-          </section><!-- mdl-tabs__panel -->
+          </section><!-- mdl-tabs__panel --> 
           
 
 
-          <!-- MDL Tab panel 2 -->
+        
           <section class="mdl-tabs__panel" id="aroundus-panel">
             <div class="mdl-tabs__panel-frame">
                
@@ -299,7 +308,29 @@
                   <img src="./images/post1.jpg" alt="">
                 </div>
                 <div class="mdl-card__supporting-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum nulla soluta, ullam corrupti maiores repudiandae delectus, labore nihil. Explicabo cumque velit quidem! Tempora reiciendis nostrum dolore, numquam minima doloremque exercitationem.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum nulla soluta, ullam corrupti maiores repudiandae delectus, labore nihil.
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <ul class="mdl-card-post__footer-links">
+                    <li>
+                      <a href="#">
+                        <i class="material-icons">favorite</i>
+                        <span>241</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="material-icons">comment</i>
+                        <span>31</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="material-icons">person_pin_circle</i>
+                        <span>49</span>
+                      </a>
+                    </li>
+                  </ul> 
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
                   <ul class="mdl-card-post__footer-links">
@@ -343,7 +374,29 @@
                   <img src="./images/post1.jpg" alt="">
                 </div>
                 <div class="mdl-card__supporting-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum nulla soluta, ullam corrupti maiores repudiandae delectus, labore nihil. Explicabo cumque velit quidem! Tempora reiciendis nostrum dolore, numquam minima doloremque exercitationem.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum nulla soluta, ullam corrupti maiores repudiandae delectus, labore nihil.
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <ul class="mdl-card-post__footer-links">
+                    <li>
+                      <a href="#">
+                        <i class="material-icons">favorite</i>
+                        <span>241</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="material-icons">comment</i>
+                        <span>31</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="material-icons">person_pin_circle</i>
+                        <span>49</span>
+                      </a>
+                    </li>
+                  </ul> 
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
                   <ul class="mdl-card-post__footer-links">
@@ -388,7 +441,7 @@
                   <img src="./images/post1.jpg" alt="">
                 </div>
                 <div class="mdl-card__supporting-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum nulla soluta, ullam corrupti maiores repudiandae delectus, labore nihil. Explicabo cumque velit quidem! Tempora reiciendis nostrum dolore, numquam minima doloremque exercitationem.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum nulla soluta, ullam corrupti maiores repudiandae delectus, labore nihil.
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
                   <ul class="mdl-card-post__footer-links">
@@ -419,7 +472,7 @@
           
 
 
-          <!-- MDL Tab panel 3 -->
+         
           <section class="mdl-tabs__panel" id="profile-panel">
             <header class="user-profile__header"> 
               <div class="user-profile__header-imgframe">
@@ -462,6 +515,23 @@
                     <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
                     <span class="mdl-checkbox__label">Visible to everyone</span>
                   </label>
+                </div>
+              </div>
+            </div><!-- mdl-tabs__panel-fram --> 
+          </section><!-- mdl-tabs__panel -->
+          
+
+
+         
+          <section class="mdl-tabs__panel" id="privacy-panel"> 
+            <div class="mdl-tabs__panel-frame"> 
+              <div class="mdl-card-post mdl-card mdl-shadow--2dp"> 
+                <div class="mdl-card__supporting-text">
+                  <h3>Privacy Policy</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem temporibus vitae nam unde nesciunt corrupti voluptate voluptates. Quo distinctio earum quas officia quod possimus, illo temporibus debitis, eum, molestiae soluta.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem temporibus vitae nam unde nesciunt corrupti voluptate voluptates. Quo distinctio earum quas officia quod possimus, illo temporibus debitis, eum, molestiae soluta.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem temporibus vitae nam unde nesciunt corrupti voluptate voluptates. Quo distinctio earum quas officia quod possimus, illo temporibus debitis, eum, molestiae soluta.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem temporibus vitae nam unde nesciunt corrupti voluptate voluptates. Quo distinctio earum quas officia quod possimus, illo temporibus debitis, eum, molestiae soluta.</p> 
                 </div>
               </div>
             </div><!-- mdl-tabs__panel-fram --> 
