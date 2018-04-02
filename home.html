@@ -137,16 +137,16 @@
 
             <div class="form-post__fieldsets">  
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" type="text" id="sample3">
-                <label class="mdl-textfield__label" for="sample3">Fanci: (title)</label> 
+                <input class="mdl-textfield__input" type="text" id="fanci-post-title">
+                <label class="mdl-textfield__label" for="fanci-post-title">Fanci: (title)</label> 
               </div> 
 
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
-                <input type="text" value="" class="mdl-textfield__input" id="fanci-duration" readonly>
-                <input type="hidden" value="" name="fanci-duration">
+                <input type="text" value="" class="mdl-textfield__input" id="fanci-post--duration" readonly>
+                <input type="hidden" value="" name="fanci-post--duration">
                 <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
-                <label for="fanci-duration" class="mdl-textfield__label">Duration</label>
-                <ul for="fanci-duration" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                <label for="fanci-post--duration" class="mdl-textfield__label">Duration</label>
+                <ul for="fanci-post--duration" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
                     <li class="mdl-menu__item" data-val="3h">3 hr</li>
                     <li class="mdl-menu__item" data-val="10h">10 hr</li>
                     <li class="mdl-menu__item" data-val="1d">1 day</li>
@@ -154,13 +154,18 @@
                 </ul>
               </div> 
 
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="fanci-post-location">
+                <label class="mdl-textfield__label" for="fanci-post-location">Location</label> 
+              </div> 
+
               <div class="mdl-textfield mdl-js-textfield">
-                <textarea class="mdl-textfield__input" type="text" rows="5" id="sample5" ></textarea>
-                <label class="mdl-textfield__label" for="sample5">Describe your Fanci</label>
+                <textarea class="mdl-textfield__input" type="text" rows="5" id="fanci-post-description"></textarea>
+                <label class="mdl-textfield__label" for="fanci-post-description">Describe your Fanci</label>
               </div>
 
               <div>
-                <button class="fanci-modal--post__addimage mdl-button mdl-js-button">
+                <button class="fanci-modal--post__addimage mdl-button mdl-js-button" id="fanci-post-image">
                   <i class="material-icons">add_a_photo</i> <span>Add an image</span>
                 </button>
               </div>
