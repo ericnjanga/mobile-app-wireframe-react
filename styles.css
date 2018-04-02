@@ -43,7 +43,7 @@ body.login,
   display: flex;
 }
 
-
+.app-header .mdl-tabs__tab-bar, 
 .mdl-textfield,
 .login .mdl-button,    
 .mdl-tabs .mdl-card-post.mdl-card,
@@ -73,8 +73,7 @@ body.login,
 #profile-panel .mdl-textfield--floating-label.is-focused .mdl-textfield__label {
   color: #ff9800;
 }
-.popper, .tooltip,
-.app-header__title,
+.popper, .tooltip, 
 .mdl-card--auth .title { 
   text-align: center;
 }
@@ -89,6 +88,8 @@ body.login,
 
 }
 
+.app-header__title,
+.app-header .mdl-tabs__tab-bar,
 #home-panel .fanci-pinpoint:not(.fanci-pinpoint__main),
 .user-profile__header-imgframe .material-icons,
 .popper, .tooltip,
@@ -96,6 +97,8 @@ body.login,
   position: absolute; 
 } 
 html, body,
+.mdl-layout-title h4, 
+.mdl-layout-title h3, 
 .mdl-card-post__header-title,
 .mdl-card-post__footer-links,
 .user-profile__header h3,
@@ -104,12 +107,23 @@ html, body,
 .app-header__title {
   margin: 0;
 } 
+.mdl-layout-title .mdl-layout-info,
+.popper[x-placement^="top"] .popper__arrow, .tooltip[x-placement^="top"] .tooltip-arrow {
+  margin-bottom: 0;
+}
+
+.mdl-layout-title .mdl-layout-info li span,
+.mdl-layout-title h3 {
+  color: rgba(0,0,0,.87);
+}
 html, body,
 .mdl-card--auth .mdl-card__supporting-text,
 .mdl-card-post.mdl-card .mdl-card__title,
-.mdl-card-post__footer-links {
+.mdl-card-post__footer-links,
+.mdl-layout__drawer .mdl-navigation {
   padding: 0;
 }
+.mdl-layout__drawer-button .material-icons,
 .app-header__title,
 .app-header a, 
 .mdl-button--raised.mdl-button--colored,
@@ -221,10 +235,16 @@ html, body,
 */ 
 .app-header{ 
   z-index: 100;
+  height: 90px;
 }
-.app-header__title {
+.app-header__title { 
+  top: 6px;
+  left: 30px;
   padding: 10px 10px 0px 20px; 
   font-size: 1.5rem;  
+}
+.app-header .mdl-tabs__tab-bar { 
+  bottom: 0; 
 }
 
 
@@ -279,6 +299,7 @@ html, body,
  * User profile
  * ------------------
 */ 
+.mdl-layout-title .mdl-layout-info li,
 .fanci-modal--post .mdl-textfield__label,
 #profile-panel .mdl-textfield__label, 
 .mdl-card-post__header-date,
@@ -306,19 +327,49 @@ html, body,
   right: 0; 
   border-radius: 30px; 
 }
+.mdl-layout-title h3, 
 .user-profile__header h3 {  
   margin-top: 10px;
   font-size: 1.5rem;
   line-height: 1.5rem;
   color: #90a4ae;
 }
+.mdl-layout-title h4, 
 .user-profile__header h4 {  
   font-size: 1.0rem;
   align-items: center;
   line-height: 0;
   color: #666;
 }
+.mdl-layout-title h4 {
+  margin-top: 10px;
+}
 
+
+.mdl-layout__drawer>.mdl-layout-title {
+  margin-top: 15px;
+}
+
+.mdl-layout-info {
+  
+}
+.mdl-layout-title .mdl-layout-info {
+  margin-top: 20px;
+  padding-left: 0;
+}
+.mdl-layout-title .mdl-layout-info li {
+  margin-right: 10px;
+  display: inline-block; 
+}
+.mdl-layout-title .mdl-layout-info li span {
+  font-weight: bold; 
+}
+
+@media screen and (max-width: 1024px) {
+  .mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+    padding: 0px 16px 16px 16px;
+  }
+}
 
 
 
@@ -496,7 +547,6 @@ html, body,
     bottom: -5px;
     left: calc(50% - 5px);
     margin-top: 0;
-    margin-bottom: 0;
 }
 .tooltip .tooltip-arrow, .popper .popper__arrow {
     border-color: #cfd8dc;
@@ -507,3 +557,4 @@ html, body,
   border-style: solid; 
   margin: 5px;
 }
+
