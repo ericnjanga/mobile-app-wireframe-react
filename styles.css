@@ -31,23 +31,23 @@ body.login,
 .popper, .tooltip { 
     background: #cfd8dc;
 }
-.mdl-card-post__meta-links li a,
-.mdl-card-post__meta-links li a span,
-.mdl-card-post__meta-links,
+.fanci-item__meta-links li a,
+.fanci-item__meta-links li a span,
+.fanci-item__meta-links,
 .mdl-tabs,
 .mdl-tabs__tab-bar > nav, 
 .user-profile__header h4,
-.mdl-card-post__header,
+.fanci-item__header,
 .user-profile__header, 
 #home-panel.is-active {
   display: flex;
 }
 
 .app-header .mdl-tabs__tab-bar, 
-.mdl-card-post__btn-optin,
+.fanci-item__btn-optin,
 .mdl-textfield,
 .login .mdl-button,    
-.mdl-tabs .mdl-card-post.mdl-card,
+.fanci-item.mdl-card,
 .mdl-card--auth,
 .mdl-card--auth .mdl-card__supporting-text, 
 .app-header,
@@ -100,8 +100,8 @@ body.login,
 html, body,
 .mdl-layout-title h4, 
 .mdl-layout-title h3, 
-.mdl-card-post__header-title,
-.mdl-card-post__meta-links,
+.fanci-item__header-title,
+.fanci-item__meta-links,
 .user-profile__header h3,
 .user-profile__header h4,
 .app-header__title,
@@ -124,8 +124,8 @@ html, body,
 }
 html, body,
 .mdl-card--auth .mdl-card__supporting-text,
-.mdl-card-post.mdl-card .mdl-card__title,
-.mdl-card-post__meta-links,
+.fanci-item.mdl-card .mdl-card__title,
+.fanci-item__meta-links,
 .mdl-layout__drawer .mdl-navigation {
   padding: 0;
 }
@@ -164,20 +164,20 @@ html, body,
 .fanci-btn-post,
 .popper, .tooltip,
 #profile-panel .mdl-checkbox,
-.mdl-card-post__meta-links li a span  {
+.fanci-item__meta-links li a span  {
   display: block; 
 }
 
-#profile-panel .mdl-card-post,
+#profile-panel .fanci-item,
 .mdl-tabs__panel-frame {
   padding: 20px;
 }
 .user-profile__header-imgframe .material-icons, 
-.mdl-card-post__header,
+.fanci-item__header,
 .popper, .tooltip { 
   padding: 10px;
 }
-.mdl-card-post__meta-links li a,
+.fanci-item__meta-links li a,
 .user-profile__header {
   justify-content: center;
 }
@@ -277,7 +277,7 @@ html, body,
  * Panels
  * ------------------
 */
-.mdl-tabs__panel-frame .mdl-card-post {
+.mdl-tabs__panel-frame .fanci-item {
   margin-bottom: 20px;
 }
 
@@ -308,7 +308,7 @@ html, body,
 .mdl-layout-title .mdl-layout-info li,
 .fanci-modal--post .mdl-textfield__label,
 #profile-panel .mdl-textfield__label, 
-.mdl-card-post__header-date,
+.fanci-item__header-date,
 #profile-panel .mdl-checkbox { 
   color: rgba(0,0,0,.54);
 }
@@ -392,49 +392,49 @@ html, body,
 
 
 /*
- * mdl-card-post
+ * fanci-item
  * ------------------
 */ 
 
-.mdl-card-post__header.border-bottom { 
+.fanci-item__header.border-bottom { 
   border-bottom: 1px solid #ddd;
 }
-.mdl-card-post__header-title { 
+.fanci-item__header-title { 
   font-size: 1.3rem;
   line-height: 1.3rem;
 }
-.mdl-card-post__avatar + .mdl-card-post__header-meta {
+.fanci-item__avatar + .fanci-item__header-meta {
   margin-left: 10px;
 }
-.mdl-card-post__header-date {
+.fanci-item__header-date {
   font-size: 0.95rem; 
 }
 
-.mdl-card-post.mdl-card .mdl-card__title img {
+.fanci-item.mdl-card .mdl-card__title img {
   max-width: 100%;
 }
-.mdl-card-post__meta-links {
+.fanci-item__meta-links {
   list-style: none; 
 }
-.mdl-card-post__meta-links li {
+.fanci-item__meta-links li {
   flex-basis: 100%;
 }
-.mdl-card-post__meta-links li a { 
+.fanci-item__meta-links li a { 
   text-decoration: none;
   color: #666;
 }
 
 
-.mdl-card-post__meta-links li a span { 
+.fanci-item__meta-links li a span { 
   text-decoration: none;
   color: #999;
 }
-.mdl-card-post__meta-links .material-icons {
+.fanci-item__meta-links .material-icons {
   margin-right: 3px;
 }
-.mdl-card-post__header,
-.mdl-card-post .mdl-card__supporting-text,
-.mdl-card-post .mdl-card__actions {
+.fanci-item__header,
+.fanci-item .mdl-card__supporting-text,
+.fanci-item .mdl-card__actions {
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -451,14 +451,14 @@ html, body,
   background-color: rgba(0,0,0,0.7);
   z-index: 999;
 }
-.fanci-modal .mdl-card-post {
+.fanci-modal .fanci-item {
   margin: 30px auto;
 }
-.fanci-modal .mdl-card-post__header {
+.fanci-modal .fanci-item__header {
   padding-left: 30px;
   padding-right: 30px;
 }
-.fanci-modal .mdl-card-post__header-title {
+.fanci-modal .fanci-item__header-title {
   font-size: 24px;
   line-height: 32px;
 }
@@ -495,7 +495,7 @@ html, body,
   font-weight: bold;
   line-height: 0.8rem;
 }
-.mdl-card-post__footer {
+.fanci-item__footer {
   padding-top: 0;
   padding-bottom: 16px;
 }
@@ -591,3 +591,51 @@ html, body,
   border-style: solid; 
   margin: 5px;
 }
+
+
+ 
+.fanci-modal--post .form-post {
+  position: relative;
+}
+.fanci-modal--post .fanci-avatar {
+  position: absolute;
+  top: 90px;
+  left: 30px;
+}
+.fanci-modal--post .form-post__fieldsets {
+  margin-top: 40px;
+  margin-left: 60px;
+} 
+
+.fanci-modal--post .modal-post__btn-submit,
+.fanci-modal--post .modal-post__btn-close {
+  position: absolute;
+  top: 30px; 
+}
+.fanci-modal--post .modal-post__btn-close {
+  top: 20px;
+  left: 15px;
+}
+.fanci-modal--post .modal-post__btn-close { 
+  background-color: transparent;
+  box-shadow: 0 1px 1.5px 0 rgba(0,0,0,0), 0 1px 1px 0 rgba(0,0,0,0);
+}
+
+.fanci-modal--post .modal-post__btn-submit { 
+  right: 30px; 
+  min-width: 120px;
+}
+.fanci-modal--post__addimage {
+  display: flex; 
+  align-items: center;
+  min-width: 160px;
+  padding: 0;
+  color: rgba(0,0,0,.54);
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+.fanci-modal--post__addimage span {
+  margin-left: 10px;
+}
+          

@@ -1,0 +1,1 @@
+## Fanci-web app's static version

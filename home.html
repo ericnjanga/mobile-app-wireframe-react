@@ -34,10 +34,10 @@
 
     <!-- (Fanci Locator) Modal -->
     <section id="modal-location" class="fanci-modal" style="display:none;"> 
-      <div class="mdl-card-post mdl-card mdl-shadow--2dp">
-        <header class="mdl-card-post__header border-bottom"> 
-          <div class="mdl-card-post__header-meta">
-            <h4 class="mdl-card-post__header-title">
+      <div class="fanci-item mdl-card mdl-shadow--2dp">
+        <header class="fanci-item__header border-bottom"> 
+          <div class="fanci-item__header-meta">
+            <h4 class="fanci-item__header-title">
               To find your Fanci:
             </h4> 
           </div>
@@ -77,58 +77,13 @@
 
     <!-- (Fanci Post) Modal -->
     <section id="modal-post" class="fanci-modal fanci-modal--post" style="display:none;"> 
-      <div class="mdl-card-post mdl-card mdl-shadow--2dp"> 
+      <div class="fanci-item mdl-card mdl-shadow--2dp"> 
         <button class="modal-post__btn-close modal-post__btn-dismiss mdl-button mdl-js-button mdl-button--fab">
           <i class="material-icons">close</i>
         </button>
        
         <div class="mdl-card__supporting-text">  
-          <style>
-            .fanci-modal--post .form-post {
-              position: relative;
-            }
-            .fanci-modal--post .fanci-avatar {
-              position: absolute;
-              top: 90px;
-              left: 30px;
-            }
-            .fanci-modal--post .form-post__fieldsets {
-              margin-top: 40px;
-              margin-left: 60px;
-            } 
-
-            .fanci-modal--post .modal-post__btn-submit,
-            .fanci-modal--post .modal-post__btn-close {
-              position: absolute;
-              top: 30px; 
-            }
-            .fanci-modal--post .modal-post__btn-close {
-              top: 20px;
-              left: 15px;
-            }
-            .fanci-modal--post .modal-post__btn-close { 
-              background-color: transparent;
-              box-shadow: 0 1px 1.5px 0 rgba(0,0,0,0), 0 1px 1px 0 rgba(0,0,0,0);
-            }
-
-            .fanci-modal--post .modal-post__btn-submit { 
-              right: 30px; 
-              min-width: 120px;
-            }
-            .fanci-modal--post__addimage {
-              display: flex; 
-              align-items: center;
-              min-width: 160px;
-              padding: 0;
-              color: rgba(0,0,0,.54);
-              text-transform: capitalize;
-              font-size: 1.1rem;
-              font-weight: normal;
-            }
-            .fanci-modal--post__addimage span {
-              margin-left: 10px;
-            }
-          </style>
+          
           <form class="form-post">
 
             <img src="./images/rsz_avatar3.jpg" alt="" class="fanci-avatar fanci-avatar__small">
@@ -290,15 +245,15 @@
           <section class="mdl-tabs__panel" id="aroundus-panel">
             <div class="mdl-tabs__panel-frame">
                
-              <div class="mdl-card-post mdl-card mdl-shadow--2dp">
-                <header class="mdl-card-post__header">
-                  <img src="./images/rsz_avatar3.jpg" alt="" class="mdl-card-post__avatar fanci-avatar fanci-avatar__small">
+              <div class="fanci-item mdl-card mdl-shadow--2dp">
+                <header class="fanci-item__header">
+                  <img src="./images/rsz_avatar3.jpg" alt="" class="fanci-item__avatar fanci-avatar fanci-avatar__small">
  
-                  <div class="mdl-card-post__header-meta">
-                    <h4 class="mdl-card-post__header-title">
+                  <div class="fanci-item__header-meta">
+                    <h4 class="fanci-item__header-title">
                       vskvwnv wefiejfwefew
                     </h4>
-                    <div class="mdl-card-post__header-date">
+                    <div class="fanci-item__header-date">
                       July 14, 2018
                     </div>
                   </div>
@@ -310,7 +265,7 @@
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum nulla soluta, ullam corrupti maiores repudiandae delectus, labore nihil.
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
-                  <ul class="mdl-card-post__meta-links">
+                  <ul class="fanci-item__meta-links">
                     <li>
                       <a href="#">
                         <i class="material-icons">date_range</i>
@@ -341,8 +296,8 @@
                     </li>
                   </ul> 
                 </div>
-                <div class="mdl-card-post__footer mdl-card__actions">
-                  <button class="mdl-card-post__btn-optin mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                <div class="fanci-item__footer mdl-card__actions">
+                  <button class="fanci-item__btn-optin mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
                     I'm interested
                   </button>
                 </div>
@@ -350,15 +305,15 @@
 
 
                
-              <div class="mdl-card-post mdl-card mdl-shadow--2dp">
-                <header class="mdl-card-post__header">
-                  <img src="./images/rsz_avatar3.jpg" alt="" class="mdl-card-post__avatar fanci-avatar fanci-avatar__small">
+              <div class="fanci-item mdl-card mdl-shadow--2dp">
+                <header class="fanci-item__header">
+                  <img src="./images/rsz_avatar3.jpg" alt="" class="fanci-item__avatar fanci-avatar fanci-avatar__small">
  
-                  <div class="mdl-card-post__header-meta">
-                    <h4 class="mdl-card-post__header-title">
+                  <div class="fanci-item__header-meta">
+                    <h4 class="fanci-item__header-title">
                       vskvwnv wefiejfwefew
                     </h4>
-                    <div class="mdl-card-post__header-date">
+                    <div class="fanci-item__header-date">
                       July 14, 2018
                     </div>
                   </div>
@@ -370,7 +325,7 @@
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum nulla soluta, ullam corrupti maiores repudiandae delectus, labore nihil.
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
-                  <ul class="mdl-card-post__meta-links">
+                  <ul class="fanci-item__meta-links">
                     <li>
                       <a href="#">
                         <i class="material-icons">date_range</i>
@@ -401,8 +356,8 @@
                     </li>
                   </ul> 
                 </div>
-                <div class="mdl-card-post__footer mdl-card__actions">
-                  <button class="mdl-card-post__btn-optin mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                <div class="fanci-item__footer mdl-card__actions">
+                  <button class="fanci-item__btn-optin mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
                     I'm interested
                   </button>
                 </div>
@@ -412,15 +367,15 @@
 
 
                
-              <div class="mdl-card-post mdl-card mdl-shadow--2dp">
-                <header class="mdl-card-post__header">
-                  <img src="./images/rsz_avatar3.jpg" alt="" class="mdl-card-post__avatar fanci-avatar fanci-avatar__small">
+              <div class="fanci-item mdl-card mdl-shadow--2dp">
+                <header class="fanci-item__header">
+                  <img src="./images/rsz_avatar3.jpg" alt="" class="fanci-item__avatar fanci-avatar fanci-avatar__small">
  
-                  <div class="mdl-card-post__header-meta">
-                    <h4 class="mdl-card-post__header-title">
+                  <div class="fanci-item__header-meta">
+                    <h4 class="fanci-item__header-title">
                       vskvwnv wefiejfwefew
                     </h4>
-                    <div class="mdl-card-post__header-date">
+                    <div class="fanci-item__header-date">
                       July 14, 2018
                     </div>
                   </div>
@@ -432,7 +387,7 @@
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum nulla soluta, ullam corrupti maiores repudiandae delectus, labore nihil.
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
-                  <ul class="mdl-card-post__meta-links">
+                  <ul class="fanci-item__meta-links">
                     <li>
                       <a href="#">
                         <i class="material-icons">date_range</i>
@@ -463,8 +418,8 @@
                     </li>
                   </ul> 
                 </div>
-                <div class="mdl-card-post__footer mdl-card__actions">
-                  <button class="mdl-card-post__btn-optin mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                <div class="fanci-item__footer mdl-card__actions">
+                  <button class="fanci-item__btn-optin mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
                     I'm interested
                   </button>
                 </div>
@@ -490,7 +445,7 @@
             </header><!-- user-profile__header -->
 
             <div class="mdl-tabs__panel-frame"> 
-              <div class="mdl-card-post mdl-card mdl-shadow--2dp">
+              <div class="fanci-item mdl-card mdl-shadow--2dp">
                 
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                   <input class="mdl-textfield__input" type="text" id="input-name">
@@ -527,7 +482,7 @@
          
           <section class="mdl-tabs__panel" id="privacy-panel"> 
             <div class="mdl-tabs__panel-frame"> 
-              <div class="mdl-card-post mdl-card mdl-shadow--2dp"> 
+              <div class="fanci-item mdl-card mdl-shadow--2dp"> 
                 <div class="mdl-card__supporting-text">
                   <h3>Privacy Policy</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem temporibus vitae nam unde nesciunt corrupti voluptate voluptates. Quo distinctio earum quas officia quod possimus, illo temporibus debitis, eum, molestiae soluta.</p>
